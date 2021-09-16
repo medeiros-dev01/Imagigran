@@ -17,6 +17,7 @@ import Register from './components/auth/Register';
 import Login from './components/auth/Login';
 import Main from './components/Main';
 import Add from './components/main/Add';
+import Save from './components/main/Save';
 
 const firebaseConfig = {
   apiKey: 'AIzaSyDKUv8kACNm7-XcGC17ziFPWRg-VEC_QOI',
@@ -80,7 +81,11 @@ const App = () => {
             options={{ headerShown: false }}
           />
 
-          <Stack.Screen name="Add" component={Add} />
+          <Stack.Screen
+            name="Add"
+            component={Add}
+          />
+          <Stack.Screen name="Save" component={Save} />
         </Stack.Navigator>
       </NavigationContainer>
     </Provider>
